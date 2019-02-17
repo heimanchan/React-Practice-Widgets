@@ -1,15 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Clock from './clock';
+import Tabs from './tabs';
+
+const panes = [
+  {title: 'red', content: 'I am a red Shiba!'},
+  {title: 'black', content: 'I am a black Shiba!'},
+  {title: 'cream', content: 'I am a black Shiba!'}
+]
 
 function Root() {
   return (
     <div>
-      
+      <Clock />
+      <Tabs panes={ panes } />
     </div>
   );
 }
 
-document.addEventListener('DOMContectLoaded', () => {
-  const root = document.getElementById('root');
-  ReactDOM.render(<Root />, root);
-})
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(<Root />, document.getElementById('root'));
+});
