@@ -16,7 +16,7 @@ export default class Tabs extends React.Component {
   render() {
     const tab = this.props.panes[this.state.tabIndex];
     return(
-      <div>
+      <div className="tabs-box widget-box">
         <h1>Shiba Colors</h1>
         <div className="tabs">
           <Headers
@@ -25,6 +25,11 @@ export default class Tabs extends React.Component {
             panes={this.props.panes}
           >
           </Headers>
+          <div className="tab-content">
+            <article>
+              {tab.content}
+            </article>
+          </div>
         </div>
       </div>
     )

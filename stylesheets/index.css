@@ -1,5 +1,6 @@
 .header {
   background: rgba(245,222,179 , 0.3);
+  /* position: fixed; */
 }
 
 .header h1 {
@@ -13,20 +14,33 @@ body {
   background: url(https://blog.mystart.com/wp-content/uploads/shutterstock_435844147-e1530198506343.jpg);
 }
 
-#root {
+.main {
   position: relative;
+  display: flex;
+  /* justify-content: space-between; */
   /* margin: 0 auto; */
+  /* margin-top: 300px; */
 }
 
 h1 {
   color: rgb(215, 162, 121);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33);
   font-size: 24px;
+  font-family: 'Oxygen';
+}
+
+.widget-box {
+  padding: 50px;
+}
+
+.clock-box {
+  /* padding: 50px; */
+  height: 100%;
 }
 
 .clock {
   width: 250px;
-  margin: 100px;
+  /* padding: 50px 30px; */
   padding: 10px;
   background: rgba(173, 164, 139, 0.33);
   border: 2px solid black;
@@ -35,13 +49,52 @@ h1 {
   font-size: 20px;
 }
 
-
-.clock h1 {
-  position: absolute;
-  top: -25px;
-}
-
 .clock > * {
   display: flex;
   justify-content: space-between;
+}
+
+.tabs-box {
+  width: 200px;
+  /* padding: 50px; */
+}
+.tab-header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-header > li {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  /* margin: 0 0.5px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #ccc;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.tab-header > li:first-child {
+  border-left: 2px solid black;
+}
+
+.tab-header > li:last-child {
+  border-right: 2px solid black;
+}
+
+.tab-header li:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.tab-content {
+  padding: 10px;
+  height: 200px;
+  background: green;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }

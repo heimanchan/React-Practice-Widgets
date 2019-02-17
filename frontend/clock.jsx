@@ -23,22 +23,23 @@ export default class Clock extends React.Component {
 
   render() {
     return (
-      <div className="clock">
+      <div className="clock-box widget-box">
         <h1>Shiba Clock</h1>
-        <div class="time">
-          <p>TIME: </p>
-          <p>
-            { this.state.time.toLocaleTimeString() }
-          </p>
-        </div>
+        <div className="clock">
+          <div className="time">
+            <p>TIME: </p>
+            <p>
+              { this.state.time.toLocaleTimeString() }
+            </p>
+          </div>
 
-        <div class="date">
-          <p>DATE:</p>
-          <p>
-            { this.state.time.toDateString() }
-          </p>
+          <div className="date">
+            <p>DATE:</p>
+            <p>
+              { this.state.time.toDateString() }
+            </p>
+          </div>
         </div>
-        
       </div>
     )
   }
