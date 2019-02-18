@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './clock';
 import Tabs from './tabs';
+import Weather from './weather';
 
 const panes = [
   {title: 'red', content: 'I am a red Shiba!'},
@@ -14,6 +15,7 @@ function Root() {
     <div className="main">
       <Clock />
       <Tabs panes={ panes } />
+      <Weather />
     </div>
   );
 }
