@@ -25,7 +25,6 @@ body {
 .main {
   position: relative;
   display: flex;
-  flex-direction: column;
   width: 900px;
   height: 600px;
   flex-wrap: wrap;
@@ -35,16 +34,18 @@ body {
   /* margin-top: 300px; */
 }
 
-h1 {
+.widget-box h1 {
   color: rgb(215, 162, 121);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33);
   font-size: 24px;
-  /* font-family: 'Oxygen'; */
+  position: absolute;
+  top: 20px;
 }
 
 .widget-box {
   padding: 50px;
   font-family: 'Oxygen';
+  position: relative;
 }
 
 .clock-box {
@@ -129,4 +130,17 @@ h1 {
 
 .weather p {
   padding: 5px;
+}
+
+.autocomplete {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  background: rgba(173, 164, 139, 0.33);
+
+}
+
+.autocomplete li {
+  padding: 2px;
 }
